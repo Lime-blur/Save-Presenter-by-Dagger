@@ -21,7 +21,9 @@ class ExamplePresenter @Inject constructor() : ExampleContract.Presenter, Exampl
         exampleView = null
     }
 
-    override fun onCleared() = Unit
+    override fun onCleared() {
+        data = null
+    }
 
     override fun requestDataFromServer() {
         if (data == null) {

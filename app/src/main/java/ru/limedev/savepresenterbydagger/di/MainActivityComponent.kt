@@ -24,9 +24,7 @@ interface MainActivityComponent {
 }
 
 @Module
-class MainActivityModule {
-
-}
+class MainActivityModule
 
 @Module
 interface BindsPresenterModule {

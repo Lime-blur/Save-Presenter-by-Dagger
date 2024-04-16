@@ -11,12 +11,11 @@ import javax.inject.Singleton
     modules = [AppModule::class]
 )
 interface AppComponent {
-
     fun plusMainActivityComponent(): MainActivityComponent
 }
 
 @Module
-class AppModule (private val context: Context) {
+class AppModule(private val context: Context) {
 
     @Singleton
     @Provides
