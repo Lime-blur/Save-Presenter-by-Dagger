@@ -31,7 +31,6 @@ object ComponentManager {
      * @return [AppComponent] - основной компонент.
      */
     fun getAppComponent() = appComponent ?: DaggerAppComponent.builder()
-        .appModule(AppModule(appContext))
         .build()
         .also {
             appComponent = it
