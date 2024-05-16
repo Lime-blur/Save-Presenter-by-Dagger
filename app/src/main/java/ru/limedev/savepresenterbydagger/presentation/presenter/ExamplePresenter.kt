@@ -1,13 +1,10 @@
 package ru.limedev.savepresenterbydagger.presentation.presenter
 
 import ru.limedev.savepresenterbydagger.data.ExampleModel
-import ru.limedev.savepresenterbydagger.di.ActivityScope
 import ru.limedev.savepresenterbydagger.presentation.contract.ExampleContract
 import ru.limedev.savepresenterbydagger.presentation.model.DataWrapper
-import javax.inject.Inject
 
-@ActivityScope
-class ExamplePresenter @Inject constructor() : ExampleContract.Presenter, ExampleContract.Model.OnFinishedListener {
+class ExamplePresenter : ExampleContract.Presenter, ExampleContract.Model.OnFinishedListener {
 
     private var exampleView: ExampleContract.View? = null
     private var exampleModel = ExampleModel()
