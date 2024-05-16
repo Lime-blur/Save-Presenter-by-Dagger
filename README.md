@@ -1,2 +1,2 @@
-# Save Presenter by Dagger
-Android приложение демонстрирует как сохранить Presenter с помощью Dagger при смене конфигурации.
+# Save Presenter without Dagger
+Android приложение демонстрирует как сохранить Presenter БЕЗ использования Dagger при смене конфигурации.
